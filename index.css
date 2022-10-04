@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@300;400;700&family=Pacifico&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=UnifrakturMaguntia&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    position: relative;
+}
+
+
+
+.header-top{
+    background: #2d2f4b;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    height: 50px;
+}
+
+.header_top_article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_top_icone{
+    color: #f76f01;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+.header_top_text{
+    margin: 15px; 
+}
+
+.header_top_text span{
+    color:#f76f01 ;
+    font-size: 0.7rem;
+    font-weight: 600; 
+    font-family:'Poppins', sans-serif;
+}
+
+.nav {
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(32, 3, 3,0.602),
+     rgba(32, 3, 3,0.602)),
+      url(/images/meche2.jpg) center/cover;
+}
+
+.Menu{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(231, 229, 229);
+    padding: 12px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+.logo a {
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo a span{
+    color: #f76f01;
+    font-weight: bold;
+}
+
+.nav_items{
+    display: flex;
+}
+
+.link{
+    margin-left: 15px;
+    color: #ffff;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background: #f76f01;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background: linear-gradient(
+        to left bottom, 
+        rgba(241, 82,8, 0.918 ),
+         rgba(216, 71,14, 0.753 )
+        );
+
+}
+
+.link a{
+    color: #fff;
+}
+
+.menu_icon{
+    display: flex;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.menu_icon a{
+    color: #fff;
+    padding: 5px;
+}
+
+.header_contenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header_contenu h3{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    animation-name: moveInToLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
+
+@keyframes moveInToLeft {
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    80%{
+        
+        transform: translate(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.header_contenu h1{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    animation-name: moveInToright;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 10px;
+}
+
+@keyframes moveInToright {
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+    80%{
+        
+        transform: translate(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.header_contenu .btn,
+.btn2{
+padding: 10px;
+background: transparent;
+}
+
+.header_contenu .btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.2s;
+    border: none;
+    outline: none;
+}
+
+.header_contenu .btn2 {
+    border: 2px solid #fff;
+    transition: ease-in-out;
+}
+
+.header_contenu .btn1 {
+    border: 2px solid #fff;
+    transition: ease-in-out;
+}
+
+.header_contenu .btn1:hover {
+    background: #f76f01;
+}
+
+.header_contenu .btn2:hover {
+    background: #2d2f4b;
+}
+
+.header_contenu a {
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width:600px){
+    .header_contenu h1{
+        font-size: 1.4rem;
+    }  
+
+    .header_contenu h1{
+        font-weight: 1.2rem;
+    }
+
+    .header_contenu h1 .btn{
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
+}
+
